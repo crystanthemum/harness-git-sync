@@ -21,5 +21,9 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+        targetRules:
+        - targets:
+          - identifier: test-target
+          variation: "true"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
