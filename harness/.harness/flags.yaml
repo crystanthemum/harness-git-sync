@@ -1,31 +1,6 @@
 featureFlags:
   flags:
   - flag:
-      name: another-flag
-      identifier: anotherflag
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: testenv
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-        targetRules:
-        - targets:
-          - identifier: test-target
-          variation: "false"
-  - flag:
       name: newagain
       identifier: newagain
       description: ""
