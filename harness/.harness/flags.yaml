@@ -24,7 +24,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: test-target
-          variation: "true"
+          variation: "false"
   - flag:
       name: newagain
       identifier: newagain
