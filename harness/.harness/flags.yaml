@@ -70,6 +70,6 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: test-target
-          variation: "false"
+          variation: "true"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
