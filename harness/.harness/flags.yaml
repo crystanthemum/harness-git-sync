@@ -24,6 +24,6 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: "12"
-          variation: "false"
+          variation: "true"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
