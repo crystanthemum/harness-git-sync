@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: another
+      identifier: another
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: test-flag
       identifier: testflag
       description: ""
