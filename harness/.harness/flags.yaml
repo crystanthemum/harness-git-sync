@@ -21,10 +21,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-        targetRules:
-        - targets:
-          - identifier: "12"
-          variation: "true"
   - flag:
       name: test1
       identifier: test1
@@ -46,10 +42,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-        targetRules:
-        - targets:
-          - identifier: "12"
-          variation: "true"
   - flag:
       name: test-flag
       identifier: testflag
