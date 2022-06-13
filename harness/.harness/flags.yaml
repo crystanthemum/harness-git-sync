@@ -49,7 +49,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: "12"
-          variation: "true"
+          variation: "false"
   - flag:
       name: test-flag
       identifier: testflag
