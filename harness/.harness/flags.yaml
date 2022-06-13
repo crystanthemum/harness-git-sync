@@ -18,7 +18,7 @@ featureFlags:
       environments:
       - identifier: testenv
         default:
-          onVariation: "false"
+          onVariation: "true"
           offVariation: "false"
         state: "off"
         targetRules:
