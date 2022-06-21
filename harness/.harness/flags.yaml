@@ -132,5 +132,13 @@ featureFlags:
             op: segmentMatch
             values:
             - mytargetgroup
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - qq
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
