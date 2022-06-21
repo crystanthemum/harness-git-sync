@@ -140,5 +140,9 @@ featureFlags:
             op: segmentMatch
             values:
             - qq
+        targetRules:
+        - targets:
+          - identifier: st50
+          variation: "true"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
