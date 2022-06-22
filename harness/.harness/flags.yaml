@@ -106,6 +106,14 @@ featureFlags:
           offVariation: "false"
         state: "off"
         rules:
+        - priority: 0
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - mytargetgroup
         - priority: 1
           serve:
             serveVariation: "true"
