@@ -117,6 +117,6 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: st50
-          variation: "true"
+          variation: "false"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
