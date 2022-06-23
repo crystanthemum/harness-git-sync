@@ -34,6 +34,9 @@ featureFlags:
         - targets:
           - identifier: "12"
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test1
       identifier: test1
