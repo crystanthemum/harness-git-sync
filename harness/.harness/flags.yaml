@@ -21,6 +21,10 @@ featureFlags:
           onVariation: q
           offVariation: o
         state: "off"
+        targetRules:
+        - targets:
+          - identifier: st50
+          variation: q
   - flag:
       name: q
       identifier: q
@@ -81,11 +85,11 @@ featureFlags:
         state: "off"
         targetRules:
         - targets:
-          - identifier: st50
-          variation: "true"
-        - targets:
           - identifier: "12"
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test-flag
       identifier: testflag
@@ -110,6 +114,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: "12"
+          - identifier: st50
           variation: "false"
   - flag:
       name: wdserfg
