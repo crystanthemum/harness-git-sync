@@ -23,6 +23,15 @@ featureFlags:
           onVariation: q
           offVariation: o
         state: "off"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: q
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - mytargetgroup
         targetRules:
         - targets:
           - identifier: st50
