@@ -26,7 +26,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: st50
-          variation: q
+          variation: var3
   - flag:
       name: q
       identifier: q
@@ -59,10 +59,8 @@ featureFlags:
             - mytargetgroup
         targetRules:
         - targets:
-          - identifier: st50
-          variation: "true"
-        - targets:
           - identifier: "12"
+          - identifier: st50
           variation: "false"
   - flag:
       name: test1
