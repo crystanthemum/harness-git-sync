@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: multi-flag
+      identifier: multiflag
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: q
+          offVariation: o
+        variations:
+        - identifier: q
+          value: q
+        - identifier: o
+          value: o
+      environments:
+      - identifier: testenv
+        default:
+          onVariation: q
+          offVariation: o
+        state: "off"
+  - flag:
       name: q
       identifier: q
       description: ""
@@ -60,11 +81,11 @@ featureFlags:
         state: "off"
         targetRules:
         - targets:
-          - identifier: "12"
-          variation: "false"
-        - targets:
           - identifier: st50
           variation: "true"
+        - targets:
+          - identifier: "12"
+          variation: "false"
   - flag:
       name: test-flag
       identifier: testflag
