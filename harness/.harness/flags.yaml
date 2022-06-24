@@ -12,9 +12,11 @@ featureFlags:
           offVariation: o
         variations:
         - identifier: q
-          value: q
+          value: "1"
         - identifier: o
-          value: o
+          value: "2"
+        - identifier: var3
+          value: "3"
       environments:
       - identifier: testenv
         default:
@@ -57,11 +59,11 @@ featureFlags:
             - mytargetgroup
         targetRules:
         - targets:
-          - identifier: "12"
-          variation: "false"
-        - targets:
           - identifier: st50
           variation: "true"
+        - targets:
+          - identifier: "12"
+          variation: "false"
   - flag:
       name: test1
       identifier: test1
