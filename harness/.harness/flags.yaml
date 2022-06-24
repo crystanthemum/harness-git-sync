@@ -92,13 +92,22 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - mytargetgroup
         targetRules:
-        - targets:
-          - identifier: st50
-          variation: "true"
         - targets:
           - identifier: "12"
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test-flag
       identifier: testflag
