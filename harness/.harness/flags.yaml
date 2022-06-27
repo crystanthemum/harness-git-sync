@@ -60,7 +60,7 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            serveVariation: "true"
+            serveVariation: "false"
           clauses:
           - attribute: ""
             op: segmentMatch
@@ -103,11 +103,11 @@ featureFlags:
             - mytargetgroup
         targetRules:
         - targets:
-          - identifier: st50
-          variation: "true"
-        - targets:
           - identifier: "12"
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test-flag
       identifier: testflag
