@@ -34,11 +34,11 @@ featureFlags:
             - mytargetgroup
         targetRules:
         - targets:
-          - identifier: st50
-          variation: q
-        - targets:
           - identifier: st49
           variation: var3
+        - targets:
+          - identifier: st50
+          variation: q
   - flag:
       name: q
       identifier: q
@@ -62,11 +62,11 @@ featureFlags:
         state: "on"
         targetRules:
         - targets:
-          - identifier: "12"
-          variation: "false"
-        - targets:
           - identifier: st50
           variation: "true"
+        - targets:
+          - identifier: "12"
+          variation: "false"
   - flag:
       name: test1
       identifier: test1
@@ -90,11 +90,11 @@ featureFlags:
         state: "off"
         targetRules:
         - targets:
-          - identifier: "12"
-          variation: "false"
-        - targets:
           - identifier: st50
           variation: "true"
+        - targets:
+          - identifier: "12"
+          variation: "false"
   - flag:
       name: test-flag
       identifier: testflag
@@ -161,9 +161,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: st49
-          variation: "true"
-        - targets:
           - identifier: st50
-          variation: "false"
+          variation: "true"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
