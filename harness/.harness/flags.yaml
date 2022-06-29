@@ -26,13 +26,16 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            serveVariation: q
+            serveVariation: var3
           clauses:
           - attribute: ""
             op: segmentMatch
             values:
             - mytargetgroup
         targetRules:
+        - targets:
+          - identifier: st49
+          variation: var3
         - targets:
           - identifier: st50
           variation: q
@@ -57,15 +60,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: "false"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - mytargetgroup
         targetRules:
         - targets:
           - identifier: "12"
@@ -92,15 +86,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - mytargetgroup
         targetRules:
         - targets:
           - identifier: "12"
@@ -129,15 +114,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - mytargetgroup
         targetRules:
         - targets:
           - identifier: "12"
@@ -182,6 +158,7 @@ featureFlags:
             - qq
         targetRules:
         - targets:
+          - identifier: st49
           - identifier: st50
           variation: "true"
   projectIdentifier: crystalgitsyncd
