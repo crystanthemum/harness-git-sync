@@ -89,8 +89,10 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: "12"
-          - identifier: st50
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test-flag
       identifier: testflag
