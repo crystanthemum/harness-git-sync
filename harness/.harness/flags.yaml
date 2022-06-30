@@ -34,10 +34,8 @@ featureFlags:
             - mytargetgroup
         targetRules:
         - targets:
-          - identifier: st50
-          variation: q
-        - targets:
           - identifier: st49
+          - identifier: st50
           variation: var3
   - flag:
       name: q
