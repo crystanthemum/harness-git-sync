@@ -26,7 +26,7 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            serveVariation: q
+            serveVariation: o
           clauses:
           - attribute: ""
             op: segmentMatch
@@ -142,7 +142,7 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            serveVariation: "false"
+            serveVariation: "true"
           clauses:
           - attribute: ""
             op: segmentMatch
