@@ -60,11 +60,11 @@ featureFlags:
         state: "on"
         targetRules:
         - targets:
-          - identifier: "12"
-          variation: "false"
-        - targets:
           - identifier: st50
           variation: "true"
+        - targets:
+          - identifier: "12"
+          variation: "false"
   - flag:
       name: test1
       identifier: test1
@@ -88,11 +88,11 @@ featureFlags:
         state: "off"
         targetRules:
         - targets:
-          - identifier: "12"
-          variation: "false"
-        - targets:
           - identifier: st50
           variation: "true"
+        - targets:
+          - identifier: "12"
+          variation: "false"
   - flag:
       name: test-flag
       identifier: testflag
@@ -142,7 +142,13 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            serveVariation: "true"
+            distribution:
+              bucketBy: identifier
+              variations:
+              - weight: 90
+                variation: "true"
+              - weight: 10
+                variation: "false"
           clauses:
           - attribute: ""
             op: segmentMatch
