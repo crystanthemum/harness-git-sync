@@ -60,6 +60,15 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - mytargetgroup
         targetRules:
         - targets:
           - identifier: "12"
