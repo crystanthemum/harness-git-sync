@@ -22,7 +22,7 @@ featureFlags:
         default:
           onVariation: q
           offVariation: o
-        state: "on"
+        state: "off"
         rules:
         - priority: 0
           serve:
@@ -57,14 +57,14 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
         targetRules:
-        - targets:
-          - identifier: st50
-          variation: "true"
         - targets:
           - identifier: "12"
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test1
       identifier: test1
@@ -88,11 +88,11 @@ featureFlags:
         state: "off"
         targetRules:
         - targets:
-          - identifier: st50
-          variation: "true"
-        - targets:
           - identifier: "12"
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test-flag
       identifier: testflag
@@ -113,7 +113,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
         targetRules:
         - targets:
           - identifier: "12"
@@ -138,7 +138,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
         rules:
         - priority: 0
           serve:
