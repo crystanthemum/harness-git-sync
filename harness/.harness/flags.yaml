@@ -153,13 +153,7 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            distribution:
-              bucketBy: identifier
-              variations:
-              - weight: 90
-                variation: "true"
-              - weight: 10
-                variation: "false"
+            serveVariation: "false"
           clauses:
           - attribute: ""
             op: segmentMatch
