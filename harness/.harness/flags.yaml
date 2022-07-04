@@ -63,8 +63,10 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: "12"
-          - identifier: st50
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test1
       identifier: test1
@@ -89,8 +91,10 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: "12"
-          - identifier: st50
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test-flag
       identifier: testflag
@@ -163,9 +167,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: st49
-          variation: "true"
-        - targets:
           - identifier: st50
-          variation: "false"
+          variation: "true"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
