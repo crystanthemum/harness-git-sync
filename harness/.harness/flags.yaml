@@ -22,7 +22,7 @@ featureFlags:
         default:
           onVariation: q
           offVariation: o
-        state: "off"
+        state: "on"
         rules:
         - priority: 0
           serve:
@@ -60,11 +60,11 @@ featureFlags:
         state: "on"
         targetRules:
         - targets:
-          - identifier: st50
-          variation: "true"
-        - targets:
           - identifier: "12"
           variation: "false"
+        - targets:
+          - identifier: st50
+          variation: "true"
   - flag:
       name: test1
       identifier: test1
