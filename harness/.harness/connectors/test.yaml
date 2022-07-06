@@ -1,0 +1,23 @@
+connector:
+  name: test
+  identifier: test
+  description: ""
+  orgIdentifier: default
+  projectIdentifier: crystaltest1
+  type: Github
+  spec:
+    url: https://github.com/crystanthemum
+    validationRepo: harness-git-sync
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: crystanthemum
+          tokenRef: crystalgitsyncdemo
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: crystalgitsyncdemo
+    executeOnDelegate: false
+    type: Account
