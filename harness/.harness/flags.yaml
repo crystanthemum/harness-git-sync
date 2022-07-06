@@ -38,7 +38,7 @@ featureFlags:
           variation: var3
         - targets:
           - identifier: st50
-          variation: o
+          variation: q
   - flag:
       name: q
       identifier: q
