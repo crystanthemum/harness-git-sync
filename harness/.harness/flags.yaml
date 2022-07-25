@@ -17,6 +17,10 @@ featureFlags:
           value: "2"
         - identifier: var3
           value: "3"
+      prerequisites:
+      - flagIdentifier: wdserfg
+        variations:
+        - "true"
       environments:
       - identifier: testenv
         default:
@@ -165,10 +169,10 @@ featureFlags:
             - qq
         targetRules:
         - targets:
-          - identifier: st49
-          variation: "true"
-        - targets:
           - identifier: st50
           variation: "false"
+        - targets:
+          - identifier: st49
+          variation: "true"
   projectIdentifier: crystalgitsyncd
   orgIdentifier: gitsync
